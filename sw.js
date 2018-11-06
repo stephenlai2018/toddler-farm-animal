@@ -7,7 +7,7 @@
 // register service worker
 if ('serviceWorker' in navigator) { // if service worker API is available
   window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(function(registration) {
+      navigator.serviceWorker.register('/toddlerfarmanimal/sw.js', {scope: '/toddlerfarmanimal/'}).then(function(registration) {
           console.log('ServiceWorker registration successful with scope: ', registration.scope);
       }, function(err) {
           console.log('ServiceWorker registration failed: ', err);
@@ -17,35 +17,35 @@ if ('serviceWorker' in navigator) { // if service worker API is available
 
 var cacheName = 'farmAnimal-v1'; /* Name your cache  */
 var filesToCache = [				 /* Files you wan to store in cache */
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/sw.js',
-  '/js/main.js',
-  '/js/phaser.js',
-  '/assets/audio/chicken.mp3',
-  '/assets/audio/chicken.ogg',
-  '/assets/audio/horse.mp3',
-  '/assets/audio/horse.ogg',
-  '/assets/audio/pig.mp3',
-  '/assets/audio/pig.ogg',
-  '/assets/audio/sheep.mp3',
-  '/assets/audio/sheep.ogg',
-  '/assets/images/icons/icon-72x72.png',
-  '/assets/images/icons/icon-96x96.png',
-  '/assets/images/icons/icon-128x128.png',
-  '/assets/images/icons/icon-144x144.png',
-  '/assets/images/icons/icon-152x152.png',
-  '/assets/images/icons/icon-192x192.png',
-  '/assets/images/icons/icon-384x384.png',
-  '/assets/images/icons/icon-512x512.png',
-  '/assets/images/arrow.png',
-  '/assets/images/background.png',
-  '/assets/images/chicken_spritesheet.png',
-  '/assets/images/horse_spritesheet.png',
-  '/assets/images/logo.png',
-  '/assets/images/pig_spritesheet.png',
-  '/assets/images/sheep_spritesheet.png',
+  '/toddlerfarmanimal/',
+  '/toddlerfarmanimal/index.html',
+  '/toddlerfarmanimal/manifest.json',
+  '/toddlerfarmanimal/sw.js',
+  '/toddlerfarmanimal/js/main.js',
+  '/toddlerfarmanimal/js/phaser.js',
+  '/toddlerfarmanimal/assets/audio/chicken.mp3',
+  '/toddlerfarmanimal/assets/audio/chicken.ogg',
+  '/toddlerfarmanimal/assets/audio/horse.mp3',
+  '/toddlerfarmanimal/assets/audio/horse.ogg',
+  '/toddlerfarmanimal/assets/audio/pig.mp3',
+  '/toddlerfarmanimal/assets/audio/pig.ogg',
+  '/toddlerfarmanimal/assets/audio/sheep.mp3',
+  '/toddlerfarmanimal/assets/audio/sheep.ogg',
+  '/toddlerfarmanimal/assets/images/icons/icon-72x72.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-96x96.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-128x128.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-144x144.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-152x152.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-192x192.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-384x384.png',
+  '/toddlerfarmanimal/assets/images/icons/icon-512x512.png',
+  '/toddlerfarmanimal/assets/images/arrow.png',
+  '/toddlerfarmanimal/assets/images/background.png',
+  '/toddlerfarmanimal/assets/images/chicken_spritesheet.png',
+  '/toddlerfarmanimal/assets/images/horse_spritesheet.png',
+  '/toddlerfarmanimal/assets/images/logo.png',
+  '/toddlerfarmanimal/assets/images/pig_spritesheet.png',
+  '/toddlerfarmanimal/assets/images/sheep_spritesheet.png',
 ];
 
 
