@@ -2,7 +2,7 @@
   "name": "Toddler Farm Animal",
   "short_name": "Toddler Farm Animal",
   "description": "A Farm Animal Game for Toddler",
-  "start_url": "/",
+  "start_url": "/toddlerfarmanimal/",
   "background_color": "#000000",
   "theme_color": "#000000",
   "display": "fullscreen",
